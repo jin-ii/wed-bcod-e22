@@ -919,7 +919,7 @@ iframe, object, embed {
   line-height: 140px;
   font-family: "raleway";
   font-weight: 700;
-  color: #9f9f9f;
+  color: #fff;
   padding-bottom: 40px;
 }
 .total_menu .total_nav {
@@ -1417,7 +1417,6 @@ iframe, object, embed {
 .main_blog ul li a .img {
   width: 100%;
   height: 240px;
-  background: #222;
 }
 .main_blog ul li a .cont {
   padding: 12px 20px 0 20px;
