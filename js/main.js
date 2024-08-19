@@ -26,6 +26,7 @@ $(function() {
 
 var swiperTopNum = $('.first').find('.swiper-slide');
 var swiperSubNum = $('.second').find('.swiper-slide');
+var swiperSubNum = $('.third').find('.swiper-slide');
 
 new Swiper('.first', {
     effect: 'fade',
@@ -50,6 +51,35 @@ new Swiper('.first', {
 });
 
 new Swiper('.second', {
+    effect: 'slide',
+    direction: 'horizontal',
+    speed: 1300,
+    fadeEffect: {
+        crossFade: false
+    },
+    autoplay: {
+        delay: 10000,
+    },
+    loop: true,
+    navigation: {
+        nextEl: '.common_arrows .next',
+        prevEl: '.common_arrows .prev',
+    },
+   
+});
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
+function closeMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.remove('active');
+}
+
+
+new Swiper('.third', {
     effect: 'slide',
     direction: 'horizontal',
     speed: 1300,

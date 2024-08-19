@@ -39,6 +39,9 @@ ani1.from("#main_section1 h3 span.text1",{autoAlpha: 0, duration: .5, x: 0 , y:-
     // });
 
 
+
+    
+
     // 스무스 스크롤 초기화 함수
 function initSmoothScroll(wrapperSelector, contentSelector) {
     return ScrollSmoother.create({
@@ -86,7 +89,7 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
   function createScrollTrigger(triggerSelector, swiper, topTextSelector) {
     ScrollTrigger.create({
       trigger: triggerSelector,
-      start: "-120px top",
+      start: "top top",
       end: "bottom top",
       pin: true,
       onUpdate: function (self) {
@@ -118,9 +121,9 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
   function createResizeHandler(swiper, smoother) {
     return function handleResize() {
       if (window.innerWidth <= 1024) {
-        swiper.changeDirection("horizontal");
+        swiper.changeDirection("vertical");
       } else {
-        swiper.changeDirection("horizontal");
+        swiper.changeDirection("vertical");
       }
       swiper.update();
       
@@ -150,3 +153,52 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
     init();
     // 필요한 경우 여기서 smoother 객체를 사용할 수 있습니다.
   });
+
+
+
+
+
+
+
+
+
+
+
+
+  	/**
+	  secMotionActive() - 섹션 모션 클래스 추가
+	 */
+    $(window).on('load',function(){
+      $('[data-motion]').each(function(idx,item){
+        ScrollTrigger.create({
+          id:'main_section' + idx,
+          trigger: $(item),
+          scrub: 0.5,
+          start:'top 90%',
+          invalidateOnRefresh: true,
+          onEnter:function(){
+            $(item).addClass('active');
+          },
+          onLeaveBack:function(){
+            $(item).removeClass('active');
+          },
+        })
+      });
+    });
+
+
+
+
+    business_Motion1 = gsap.timeline({
+      scrollTrigger: {
+          trigger: ".main_business",
+          scrub: 0.5,    
+          start:'top top',
+          end:'top top',
+          invalidateOnRefresh: true,
+      }
+  }).to('.main_business .business_slide',{
+      width:'90.4%',
+      height:'81vh'
+  });
+
