@@ -970,14 +970,14 @@ iframe, object, embed {
   max-width: 220px;
   color: #222;
   padding-left: 60px;
-  background: url("../images/common/icon_p_download.png") 12px center no-repeat;
+  background: url("../images/common/icon_p_download_bl.png") 12px center no-repeat;
   height: 60px;
   background-size: 35px;
   font-size: 17px;
 }
 .total_menu .total_bottom_title a.btn_p_download:hover {
   color: #fff;
-  background: #222 url("../images/common/icon_p_download_bl.png") 12px center no-repeat;
+  background: #222 url("../images/common/icon_p_download.png") 12px center no-repeat;
   font-weight: 900;
 }
 
@@ -995,7 +995,7 @@ iframe, object, embed {
 .total_menu.active .btn_close::before, .total_menu.active .btn_close::after {
   width: 32px;
   height: 32px;
-  background: #827f8b;
+  background: #222;
   height: 4px;
   transform-origin: center;
 }
@@ -1136,14 +1136,17 @@ iframe, object, embed {
   line-height: 63px;
   padding-bottom: 24px;
   letter-spacing: -2px;
+  transition-property: transform, opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.41, 0.01, 0.16, 1.01);
 }
-.visual_txt2 h3 span {
+.visual_txt2 span {
   display: inline-block;
 }
-.visual_txt2 h3 span.color {
+.visual_txt2 span.color {
   color: #71778A;
 }
-.visual_txt2 h3 span.line {
+.visual_txt2 span.line {
   display: inline-block;
   left: 200px;
   width: 200px;
@@ -1151,7 +1154,8 @@ iframe, object, embed {
   background: #71778A;
   margin-bottom: 14px;
 }
-.visual_txt2 p {
+
+p {
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;

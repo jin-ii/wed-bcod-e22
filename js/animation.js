@@ -193,7 +193,7 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
       scrollTrigger: {
           trigger: ".main_business",
           scrub: 0.5,    
-          start:'top top',
+          start:'-40% top',
           end:'top top',
           invalidateOnRefresh: true,
       }

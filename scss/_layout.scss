@@ -42,16 +42,16 @@
   }
 .total_bottom_title{
   h3{color:#222;font-size:24px;line-height:36px;font-weight:400;padding:0 0 20px 12px}
-  a.btn_p_download{display:flex;align-items:center;max-width:220px;color:#222;padding-left:60px;background:url($imgurl2 + "icon_p_download.png") 12px center no-repeat;height:60px;background-size:35px;
+  a.btn_p_download{display:flex;align-items:center;max-width:220px;color:#222;padding-left:60px;background:url($imgurl2 + "icon_p_download_bl.png") 12px center no-repeat;height:60px;background-size:35px;
     font-size:17px;
-    &:hover{color:#fff;background:#222 url($imgurl2 + "icon_p_download_bl.png") 12px center no-repeat;font-weight:900;}
+    &:hover{color:#fff;background:#222 url($imgurl2 + "icon_p_download.png") 12px center no-repeat;font-weight:900;}
   }
   
 }
 }
 .total_menu.active{right: 0; /* Slide the menu into view */}
 .total_menu.active .btn_close{@include position($t:40px,$r:70px);color:#fff;}
-.total_menu.active .btn_close::before,.total_menu.active .btn_close::after{width:32px;height:32px;background:#827f8b;height:4px;transform-origin:center} 
+.total_menu.active .btn_close::before,.total_menu.active .btn_close::after{width:32px;height:32px;background:#222;height:4px;transform-origin:center} 
 .total_menu.active .btn_close::before{@include before;@include position($t:50%,$l:0);transform:rotate(45deg);}
 .total_menu.active .btn_close::after{@include before;@include position($t:50%,$l:0);transform:rotate(-45deg);}
 .total_menu .menu-item {padding: 10px;color: #fff;text-decoration:none;display: block;}
@@ -97,13 +97,16 @@
 
 /**** main_section2 ****/
 .visual_txt2{text-align:center;padding:160px 0;
-  h3{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:24px;letter-spacing:-2px;
+  h3{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:24px;letter-spacing:-2px;transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.41, 0.01, 0.16, 1.01);
+}
   span{display:inline-block}
   span.color{color:#71778A}
   span.line{display:inline-block; left:200px; width:200px;height:7px;background:#71778A;margin-bottom:14px;}
   }
   p{font-size:20px;line-height:32px;font-weight:300}
-}
+
 
 /**** main_section3 ****/
 .wedb_intro{position:relative;width:100%;height:800px;overflow:hidden;background:url(../images/layout/main_intro_img1.jpg) center center no-repeat;
