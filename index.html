@@ -81,9 +81,9 @@
                     <button class="btn_total_menu" onclick="toggleMenu()"></button>
                 
                     <!-- Navigation Menu -->
-                    <div class="total_menu" id="menu">
+                    <div class="total_menu" id="menu" data-motion >
                         <h2 data-motion>BIG DATA &<br> SOLUTION WeDB</h2>
-                        <div class="total_nav" data-motion>
+                        <div class="total_nav">
                             <ul>
                                 <li class="menu"><a href="1-1.html"><span>ABOUT US</span></a></li>
                                 <li class="menu"><a href="2-1.html"><span>BUSINESS</span></a></li>
@@ -221,7 +221,7 @@
                 <div class="business_box business_area2 swiper-slide">               
                     <div class="area_text_wrap">
                         <div class="area_text1">
-                            <h4>WATER</h4>
+                            <h4 class="motion on">WATER</h4>
                             <p class="title">지속가능한 농업과 미래에너지</p>                           
                         </div>               
                         <div class="area_text2">
@@ -235,7 +235,7 @@
                 <div class="business_box business_area3 swiper-slide">               
                     <div class="area_text_wrap">
                         <div class="area_text1">
-                            <h4>DROUGHT</h4>
+                            <h4 class="motion on">DROUGHT</h4>
                             <p class="title">지속가능한 농업과 미래에너지</p>                           
                         </div>               
                         <div class="area_text2">
@@ -280,10 +280,10 @@
                 <p class="p_title" data-motion>우리는 의미 있는 데이터를 집착적으로 분석하여 <br>
                     최적의 솔루션을 제공하는 데이터 솔루션 전문기업입니다.</p>
             </article>
-            <ul class="technical_list" data-motion>
+            <ul class="technical_list">
                 <li>
                     <a href="">
-                        <div class="img_box">
+                        <div class="img_box img1" data-motion>
                             <img src="images/layout/technical_img1.jpg" alt="">
                             <div class="ovrly"></div>
                             <div class="cont">                         
@@ -294,7 +294,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <div class="img_box">
+                        <div class="img_box img2" data-motion>
                             <img src="images/layout/technical_img2.jpg" alt="">
                             <div class="ovrly"></div>
                             <div class="cont">                         
@@ -305,7 +305,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <div class="img_box">
+                        <div class="img_box img3" data-motion>
                             <img src="images/layout/technical_img3.jpg" alt="">
                             <div class="ovrly"></div>
                             <div class="cont">                         
@@ -316,7 +316,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <div class="img_box">
+                        <div class="img_box img4" data-motion>
                             <img src="images/layout/technical_img4.jpg" alt="">
                             <div class="ovrly"></div>
                             <div class="cont">                         
@@ -387,27 +387,14 @@
         <!-- wedb blog -->
         <section id="main_section7" class="main_section main_blog">
             <div class="sec2 blog_wrap">
-            <h3 data-motion>Blog</h3>
-            <a href="" class="btn_more"></a>
-            <ul class="list" data-motion>
-                <li>
-                    <a href="">
-                        <div class="img"><img src="images/layout/blog_ex_img1.jpg" alt=""></div>
-                        <div class="cont">
-                            <p class="date">2022.04.15</p>
-                            <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
-                            <p class="txt">
-                                농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
-                                농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
-                                농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
-                                농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
-                            </p>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
+                <div class="title">
+                    <h3 data-motion>Blog</h3>            
+                    <a href="" class="btn_more"></a>
+                </div>         
+                <ul class="list">
+                    <li data-motion>
                         <a href="">
-                            <div class="img"><img src="images/layout/blog_ex_img2.jpg" alt=""></div>
+                            <div class="img"><img src="images/layout/blog_ex_img1.jpg" alt=""></div>
                             <div class="cont">
                                 <p class="date">2022.04.15</p>
                                 <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
@@ -419,38 +406,53 @@
                                 </p>
                             </div>
                         </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="img"><img src="images/layout/blog_ex_img3.jpg" alt=""></div>
-                            <div class="cont">
-                                <p class="date">2022.04.15</p>
-                                <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
-                                <p class="txt">
-                                    농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
-                                    농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
-                                    농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
-                                    농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="img"><img src="images/layout/blog_ex_img4.jpg" alt=""></div>
-                            <div class="cont">
-                                <p class="date">2022.04.15</p>
-                                <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
-                                <p class="txt">
-                                    농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
-                                    농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
-                                    농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
-                                    농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-            </ul>   
+                        </li>
+                        <li data-motion>
+                            <a href="">
+                                <div class="img"><img src="images/layout/blog_ex_img2.jpg" alt=""></div>
+                                <div class="cont">
+                                    <p class="date">2022.04.15</p>
+                                    <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
+                                    <p class="txt">
+                                        농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
+                                        농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
+                                        농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
+                                        농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-motion>
+                            <a href="">
+                                <div class="img"><img src="images/layout/blog_ex_img3.jpg" alt=""></div>
+                                <div class="cont">
+                                    <p class="date">2022.04.15</p>
+                                    <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
+                                    <p class="txt">
+                                        농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
+                                        농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
+                                        농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
+                                        농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-motion>
+                            <a href="">
+                                <div class="img"><img src="images/layout/blog_ex_img4.jpg" alt=""></div>
+                                <div class="cont">
+                                    <p class="date">2022.04.15</p>
+                                    <h4>‘농업환경보전프로그램’ 이행점검, ‘온라인’에서 간편하게</h4>
+                                    <p class="txt">
+                                        농촌진흥청(청장 권재한)은 활동 이행을 증빙해야 하는 농업인의 편의성을 높이고 프로그램 수행이 
+                                        농업 환경에 미치는 영향을 정량적으로 평가하기 위해 ‘농업환경보전프로그램 이행점검 시스템’을 개발했다고 6일 밝혔다.
+                                        농림축산식품부가 운영 중인 ‘농업환경보전프로그램’은 농업 환경과 생태계의 보전, 
+                                        농촌 경관을 개선하기 위한 지역 주민들의 활동을 지원하는 사업이다.                                
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                </ul>   
         </div>
         </section>     
             <!-- //wedb blog -->

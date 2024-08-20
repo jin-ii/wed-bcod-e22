@@ -82,7 +82,10 @@ function closeMenu() {
 new Swiper('.third', {
     effect: 'slide',
     direction: 'horizontal',
-    speed: 1300,
+    speed: 800,
+    slidesPerView :3,
+    spaceBetween : 3,
+    centeredSlides : false,  
     fadeEffect: {
         crossFade: false
     },

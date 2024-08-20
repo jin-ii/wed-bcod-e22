@@ -19,28 +19,8 @@ ani1.from("#main_section1 h3 span.text1",{autoAlpha: 0, duration: .5, x: 0 , y:-
     }); 
 
 
-    // const ani4 = gsap.timeline();
-    // ani4.from("#main_section4 .business_area1", {
-    //     autoAlpha: 1,
-    //     scale: 1,
-    //     width: "100vw",
-    //     height: "100vh"
-    // });
-
-    // ScrollTrigger.create({
-    //     animation: ani4,
-    //     trigger: "#main_section4 ",
-    //     start: "top top",
-    //     end: "+=3000",
-    //     scrub: true,
-    //     pin: true, 
-    //     anticipatePin: 1,
-    //     markers: true
-    // });
 
 
-
-    
 
     // 스무스 스크롤 초기화 함수
 function initSmoothScroll(wrapperSelector, contentSelector) {
@@ -135,8 +115,7 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
   }
   
   // 초기화 함수
-  function init() {
- 
+  function init() { 
     
     const swiper = initBusinessSlide(".business_slide", ".business_slide .swiper-pagination");
     createScrollTrigger(".main_business", swiper, "");
@@ -155,50 +134,54 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
   });
 
 
+	/*	스크롤시 사이즈 변경	 */  
+  business_Motion1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".main_business",
+        scrub: 0.5,    
+        start:'-40% top',
+        end:'top top',
+        invalidateOnRefresh: true,
+    }
+}).to('.main_business .business_slide',{
+    width:'90.4%',
+    height:'81vh'
+});
 
 
-
-
-
-
-
-
-
-
-  	/**
-	  secMotionActive() - 섹션 모션 클래스 추가
-	 */
-    $(window).on('load',function(){
-      $('[data-motion]').each(function(idx,item){
-        ScrollTrigger.create({
-          id:'main_section' + idx,
-          trigger: $(item),
-          scrub: 0.5,
-          start:'top 90%',
-          invalidateOnRefresh: true,
-          onEnter:function(){
-            $(item).addClass('active');
-          },
-          onLeaveBack:function(){
-            $(item).removeClass('active');
-          },
-        })
-      });
+  /*	secMotionActive() - 섹션 모션 클래스 추가	 */
+  $(window).on('load',function(){
+    $('[data-motion]').each(function(idx,item){
+      ScrollTrigger.create({
+        id:'#wrap' + idx,
+        trigger: $(item),
+        scrub: 0.5,
+        start:'top 90%',
+        invalidateOnRefresh: true,
+        onEnter:function(){
+          $(item).addClass('active');
+        },
+        onLeaveBack:function(){
+          $(item).removeClass('active');
+        },
+      })
     });
-
-
-
-
-    business_Motion1 = gsap.timeline({
-      scrollTrigger: {
-          trigger: ".main_business",
-          scrub: 0.5,    
-          start:'-40% top',
-          end:'top top',
-          invalidateOnRefresh: true,
-      }
-  }).to('.main_business .business_slide',{
-      width:'90.4%',
-      height:'81vh'
   });
+
+
+
+
+//   const sub1 = gsap.timeline();
+// sub1.from("#sub_container .title_type1 h3", {autoAlpha: 0, duration: .5, x:0, y: 50})
+//     .from("#sub_container .title_type1 p", {autoAlpha: 0, duration: .5, x:0, y: 50})    
+//     .from(".wedb_do_wrap", {autoAlpha: 0, duration: .5, x:0, y: 50})
+//     wedb_do_wrap
+
+//     ScrollTrigger.create({
+//         trigger: "#sub_container",
+//         start: "top center",
+//         end: "bottom center",
+//         toggleActions: "play none none reverse",
+//         markers: false
+//     }); 
 
