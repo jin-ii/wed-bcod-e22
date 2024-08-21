@@ -28,11 +28,11 @@
 
 
 /**** About us ****/
-.intro_image1{background:url(../images/sub/intro_img1.jpg) no-repeat;height:650px;background-size:cover;@include flex-center;
+.intro_image1{background:url(../images/sub/intro_img1.jpg) no-repeat;height:650px;background-size:cover;background-attachment:fixed;@include flex-center;
     .text{color:#fff;font-size:48px;letter-spacing:20px;@include font-face1;font-weight:400;   
     }
   }
-  
+
   // sec2
   .intro_sec2{width:1478px;margin:0 auto}
   .wedb_do_wrap{padding:100px 0;
@@ -229,3 +229,11 @@
     ul{display:flex;gap:35px}
 
   }
+
+
+
+
+  #atc03 .txt_wrap{display:flex;flex-direction:column;justify-content:center; align-items:flex-start;height:200vh;padding-left:30px;
+    font-size:70px;font-weight:900;line-height:1.15;color:rgba(0,0,0,.2)}
+#atc03 .txt_wrap p{position:relative;width:max-content;background:linear-gradient(to right, #fff, #fff) no-repeat;
+  -webkit-background-clip:text;background-clip:text;background-size:0%;transition:background-size cubic-bezier(.1,.5,.5,1) 0.5s}

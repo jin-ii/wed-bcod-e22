@@ -169,8 +169,6 @@ function initSmoothScroll(wrapperSelector, contentSelector) {
   });
 
 
-
-
 //   const sub1 = gsap.timeline();
 // sub1.from("#sub_container .title_type1 h3", {autoAlpha: 0, duration: .5, x:0, y: 50})
 //     .from("#sub_container .title_type1 p", {autoAlpha: 0, duration: .5, x:0, y: 50})    

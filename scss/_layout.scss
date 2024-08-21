@@ -1,4 +1,6 @@
-#wrap{width:100%;min-width:1920px;margin:0 auto;overflow:hidden}
+#wrap{width:100%;min-width:1920px;margin:0 auto;overflow:hidden;
+
+}
 
 [data-motion]{opacity:0; transform:translateY(150px);transition:opacity 0.5s, transform 0.5s}
 [data-motion].active{opacity:1; transform: translateY(0);}
@@ -7,6 +9,7 @@
 #header{position:fixed;top:0;left:0;width:100%;z-index:999;
     .header_wrap{position:relative;width:100%;height:100px;padding:0 40px;display:flex;justify-content:space-between;align-items:center;background:#fff;
         #nav ul{display:flex;align-items:center;
+          @include mobile{display:none}
                 li{
                     a{position:relative;display:block;color:#222;font-size:18px;@include font-face1;margin:0 60px;font-weight:700;letter-spacing:0}                  
                     a::after{@include before;position:absolute;left:0;bottom:-4px;width:0;height:2px;background-color:#222;transition: width 0.4s ease;}   
@@ -51,7 +54,7 @@
 }
 }
 .total_menu.active{right: 0; /* Slide the menu into view */}
-.total_menu.active .btn_close{@include position($t:40px,$r:70px);color:#fff;}
+.total_menu.active .btn_close{@include position($t:40px,$r:30px);color:#fff;width:40px;height:40px;display:block}
 .total_menu.active .btn_close::before,.total_menu.active .btn_close::after{width:32px;height:32px;background:#222;height:4px;transform-origin:center} 
 .total_menu.active .btn_close::before{@include before;@include position($t:50%,$l:0);transform:rotate(45deg);}
 .total_menu.active .btn_close::after{@include before;@include position($t:50%,$l:0);transform:rotate(-45deg);}

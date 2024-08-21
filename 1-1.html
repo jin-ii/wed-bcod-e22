@@ -111,7 +111,11 @@
             <div class="location_info">
                 <p class="home_location"><span>HOME</span> > <strong>ABOUT US</strong></p>
                 <a href="" class="btn_share"></a>
-                <a href="" class="btn_sns"><span class="hidden">sns공유하기</span></a>
+                <a href="" class="btn_sns" onclick="$(this).next().slideToggle();return false;"><span class="hidden">sns공유하기</span></a>
+
+                <ul style="display:none">
+                    <li><a href="">페이스북</a></li>
+                </ul>
             </div>
             <div class="common_sub_top">
                 <p>위디비 소개</p>
@@ -128,8 +132,9 @@
                             <p class="p_title">우리는 의미 있는 데이터를 집착적으로 분석하여 <br>
                                 최적의 솔루션을 제공하는 데이터 솔루션 전문기업입니다.</p>
                         </article>
-                        <div class="intro_image1">
+                        <div class="intro_image1" id="act03">
                             <div class="text">WE <span class="sign">+</span> DB <span class="sign">=</span> <strong> DATA</strong></div>
+                            
                         </div>
                     </section>
 
@@ -147,7 +152,7 @@
                             <img src="images/sub/intro_img2.png" alt="">
                         </article>
 
-                        <div class="wedb_do_wrap">
+                        <div class="wedb_do_wrap" data-motion>
                             <ul>
                                 <li>
                                     <img src="images/sub/intro_do_1.png" alt="user">
@@ -199,7 +204,7 @@
                                     <span>UI/UX</span><span>UI/UX</span>
                                 </div>                            
                             </div>
-                            <div class="swiper-container third">
+                            <div class="swiper-container third" data-motion>
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <p class="img"><img src="images/sub/do_img1.jpg" alt=""></p>
