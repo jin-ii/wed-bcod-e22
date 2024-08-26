@@ -40,6 +40,8 @@ new Swiper('.first', {
     effect: 'fade',
     direction: 'horizontal',
     speed: 1300,
+    slidesPerView: 1,
+    spaceBetween: 10, 
     fadeEffect: {
         crossFade: false
     },    
@@ -56,6 +58,7 @@ new Swiper('.first', {
             TweenMax.staggerFromTo($("#main_slider .swiper-wrapper .slider_img"), 5, { scale: '1.1' }, { scale: '1', ease: Power3.easeOut });
         },
     breakpoints: {
+       
         640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -133,3 +136,7 @@ function closeMenu() {
 }
 
 
+
+
+
+console
