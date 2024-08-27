@@ -1,8 +1,14 @@
 /**** common ****/
-.sec1{position:relative;max-width:1920px;width:1410px;height:100%;margin:0 auto}
-.sec2{position:relative;max-width:1920px;height:100%;padding:0 100px;margin:0 auto}
+.sec1{position:relative;max-width:1920px;width:1410px;height:100%;margin:0 auto;
+  @include mobile{width:100%}
+}
+.sec2{position:relative;max-width:1920px;height:100%;padding:0 100px;margin:0 auto;
+  @include mobile{width:100%}
+}
 
-.h3_title{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:20px;letter-spacing:-2px}
+.h3_title{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:20px;letter-spacing:-2px;
+  @include mobile{font-size:32px;line-height:45px}
+}
 .h3_title2{font-size:54px;line-height:68px;padding-bottom:70px;letter-spacing:-2px} //eng title
 
 
@@ -10,7 +16,9 @@
 .h4_title{font-size:24px;line-height:40px;padding-bottom:5px;font-weight:800}
 .h5_title{font-size:16px;line-height:35px;padding-bottom:5px;font-weight:800;color:#3252A5}
 
-.p_title{font-size:22px;line-height:35px;font-weight:300}
+.p_title{font-size:22px;line-height:35px;font-weight:300;
+  @include mobile{font-size:18px;line-height:30px}
+}
 
 .p_type1{font-size:20px;line-height:32px;font-weight:300}
 
