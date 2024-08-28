@@ -3,7 +3,7 @@
   @include mobile{width:100%}
 }
 .sec2{position:relative;max-width:1920px;height:100%;padding:0 100px;margin:0 auto;
-  @include mobile{width:100%}
+  @include mobile{width:100%;padding:0 30px}
 }
 
 .h3_title{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:20px;letter-spacing:-2px;
@@ -128,6 +128,9 @@
     
 .pagination{@include flex-center;padding:110px 0;
   .current{font-size:30px;font-weight:500;margin-top:-30px;padding:0 5px}
+  .arrow_btn{display:block;background:url($imgurl2 + "icon_arrow_gr.png") no-repeat;width:33px;height:26px;margin:0 30px}
+  .arrow_btn:hover{background:url($imgurl2 + "icon_arrow_bl2.png") no-repeat}
+  .btn_arrow_prev{transform:rotate(180deg)}
   .total{font-weight:300;padding-left:5px}
 }
 
