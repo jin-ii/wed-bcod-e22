@@ -128,7 +128,7 @@
     
 .pagination{@include flex-center;padding:110px 0;
   .current{font-size:30px;font-weight:500;margin-top:-30px;padding:0 5px}
-  .arrow_btn{display:block;background:url($imgurl2 + "icon_arrow_gr.png") no-repeat;width:33px;height:26px;margin:0 30px}
+  .arrow_btn{display:block;background:url($imgurl2 + "icon_arrow_bl2.png") no-repeat;width:33px;height:26px;margin:0 30px}
   .arrow_btn:hover{background:url($imgurl2 + "icon_arrow_bl2.png") no-repeat}
   .btn_arrow_prev{transform:rotate(180deg)}
   .total{font-weight:300;padding-left:5px}
@@ -241,10 +241,56 @@
 
   }
 
+  // 일반 게시판
+  .board_basic{
+    .list_total_count{margin-bottom:4px;font-size:14px;letter-spacing:0;display:flex;justify-content:flex-end;}
+  }
+
+  .board_news_table{border-top:2px solid #333;text-align:center;width:100%;
+    thead{background:#fff;border-bottom:1px solid #333;
+      th{line-height:48px;height:50px;color:#222;font-size:15px;font-weight:500;padding:0 20px}
+     }
+     td{height:55px;min-height:55px;line-height:53px;border-bottom:1px solid #d9d9d9;letter-spacing:-1px;padding:4px 20px;font-size:17px;
+      color:#222;font-weight:300;
+      a{color:#222;font-size:17px;
+      &:hover{font-weight:400;text-decoration:none}
+      }
+    }
+     td.td_title{text-align:left}  
+  }
+
+.board_view{  
+  .top{border-bottom:1px solid #333;width:100%;padding:40px 0;margin-bottom:20px;text-align:center;
+    h3{font-size:30px;line-height:45px;font-weight:700;padding-bottom:20px}
+    p.date{color:#999;font-size:15px;letter-spacing:0;font-weight:500}
+  }
+  .view_cont{border-bottom:1px solid #bdbdbd;min-height:700px;
+    img{margin:0 auto}
+  }
+}
+.view_btm{border-top: 1px solid #bdbdbd;padding:30px 0;display: flex;
+  align-items:center;justify-content: space-between;
+  .cnt_box{display:flex;align-items:center;width:35%;
+    .none{pointer-events:none}
+    .tit_wrap{width:100%;min-width:0;color:#222;padding:0 20px}
+    .tit_wrap .tit{font-weight:700}
+    .tit_wrap .txt{width:80%;margin-right:auto;font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  }
+  .ico{background:url("../images/common/icon_arrow_bl2.png") no-repeat;transform:rotate(180deg);width:30px;height:24px}
+  .next .ico{transform:rotate(0deg) !important}
+  .next .tit_wrap{text-align:right;justify-content:flex-end}
+  .next .tit_wrap .txt{margin-right:0;margin-left:auto;}
+  .btn_wrap{max-width:170px;margin: 0 auto;
+  }
+  .btm_btn{display:flex;width:170px;height:40px;align-items:center;justify-content:center;background:#000;color:#fff;border:0;
+    font-size:15px;font-weight:700;text-align:center;transition: background-color 0.5s, color 0.5s; cursor: pointer}
+}
 
 
 
-  #atc03 .txt_wrap{display:flex;flex-direction:column;justify-content:center; align-items:flex-start;height:200vh;padding-left:30px;
-    font-size:70px;font-weight:900;line-height:1.15;color:rgba(0,0,0,.2)}
-#atc03 .txt_wrap p{position:relative;width:max-content;background:linear-gradient(to right, #fff, #fff) no-repeat;
-  -webkit-background-clip:text;background-clip:text;background-size:0%;transition:background-size cubic-bezier(.1,.5,.5,1) 0.5s}
+
+
+//   #atc03 .txt_wrap{display:flex;flex-direction:column;justify-content:center; align-items:flex-start;height:200vh;padding-left:30px;
+//     font-size:70px;font-weight:900;line-height:1.15;color:rgba(0,0,0,.2)}
+// #atc03 .txt_wrap p{position:relative;width:max-content;background:linear-gradient(to right, #fff, #fff) no-repeat;
+//   -webkit-background-clip:text;background-clip:text;background-size:0%;transition:background-size cubic-bezier(.1,.5,.5,1) 0.5s}
