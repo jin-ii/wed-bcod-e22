@@ -1,5 +1,7 @@
 #wrap{width:100%;min-width:1920px;margin:0 auto;overflow:hidden;
   @include mobile{min-width:100%}
+  @include tablet{min-width:100%}
+  @include desktop{min-width:100%}
 
 }
 
@@ -12,6 +14,7 @@
       @include mobile{padding:0 20px}
         #nav ul{display:flex;align-items:center;
           @include mobile{display:none}
+          @include tablet{display:none}
                 li{
                     a{position:relative;display:block;color:#222;font-size:18px;@include font-face1;margin:0 60px;font-weight:700;letter-spacing:0}                  
                     a::after{@include before;position:absolute;left:0;bottom:-4px;width:0;height:2px;background-color:#222;transition: width 0.4s ease;}   
@@ -97,12 +100,14 @@
 #main_slider{position:relative;width:100%;
   .swiper-container{height:980px;overflow:hidden;
   @include mobile{height:550px}
+  @include tablet{height:750px}
   }
 }
 .slider_tit{@include position($t:50%,$l:50%);transform:translate(-50%, -50%);color:#fff;font-size:48px;
     line-height:67px;font-weight:600;text-align:center;opacity:0; 
   br{
     @include mobile{display:none}
+    @include tablet{display:none}
   }
   @include mobile{font-size:30px;line-height:42px}
   }
@@ -111,9 +116,11 @@
 .swiper-slide-active .slider_tit{opacity:1;transition:1.5s 0.6s;}
 .slider_img{
   @include mobile{height:100%}
+  @include tablet{height:100%}
 }
 .slider_img img{width:100%;
   @include mobile{height:100%}
+  @include tablet{height:100%}
 }
 
 .visual_pagination{@include position($l:50%,$b:100px);display:flex;gap:10px}
@@ -209,12 +216,20 @@
 
 .wedb_technical{padding:80px 0;
   @include mobile{padding:80px 20px}
-  .technical_list{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;
+  @include tablet{padding:80px 30px}
+  .technical_list{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;      
     @include mobile{gap:0}
+    @include tablet{gap:0}
+    @include desktop{gap:0}
+    li{
+      @include tablet{width:50%}
+      @include desktop{width:25%}
+    }
     .active.img1{transition:transform .2s;}
     .active.img2{transition:transform .4s;}
     .active.img3{transition:transform .6s;}
     .active.img4{transition:transform .8s;}
+   
     .img_box{width:100%;height:100%;position:relative;overflow:hidden;
       img{width:100%;top:0;height:100%;position:relative;left:0;-webkit-transition:-webkit-transform 0.3s;-moz-transition:-moz-transform 0.3s;-o-transition:-o-transform 0.3s;transition: transform 0.3s}
       .cont{position:absolute;left:0;top:60px;font-size:20px;color:#fff;padding:0 40px;width:100%;        
@@ -233,10 +248,12 @@
 /**** board ****/
 .main_news{padding:80px 0;
   @include mobile{padding:80px 30px}
+  @include tablet{padding:80px 30px}
   a.btn_more{background:url($imgurl2 + "icon_arrow_bl.png") no-repeat;display:block;width:34px;height:35px;@include position($r:0,$t:100px)}
   ul.list{display:flex;padding:50px 0 0 0;flex-wrap:wrap;
       li{display:flex;width:50%;padding-bottom:70px;    
         @include mobile{width:100%;flex-direction:column;padding-bottom:40px}
+        @include tablet{flex-direction:column}
           a{color:#222;font-size:21px;width:70%;line-height:35px;max-height:108px;overflow:hidden;
             @include mobile{width:100%;font-size:18px;line-height:30px;}
               &:hover{text-decoration:none;color:#000;font-weight:600}
@@ -247,6 +264,7 @@
               }
               .date{font-size:18px;color:#999;letter-spacing:-.8px;
                 @include mobile{font-size:16px}
+                @include tablet{font-size:16px;display:block;padding-bottom:12px}
               }
           }         
       }
@@ -258,6 +276,7 @@
 // blog
 .main_blog{min-height:100%;height:980px;display:flex;justify-content:center;flex-direction:column;background:url($imgurl1 + 'bg_blog.jpg') center top no-repeat;background-size:cover;
   @include mobile{height:auto;padding:100px 0}
+  @include tablet{height:auto;padding:100px 0}
   .blog_wrap{display:flex;flex-direction:column;justify-content:center;}
   .title{position:relative}
   h3{text-align:left;font-size:30px;color:#fff;padding-bottom:40px;
@@ -268,6 +287,7 @@
   ul{display:flex;gap:35px;
     li{width:25%;
       @include mobile{width:100%}
+      @include tablet{width:100%}
       &:nth-child(1){transition:transform .2s;}
       &:nth-child(2){transition:transform .4s;}
       &:nth-child(3){transition:transform .6s;}
@@ -275,6 +295,7 @@
      a{color:#fff;
       .img{width:100%;height:240px;
       @include mobile{height:auto;overflow:hidden}
+      @include tablet{height:auto;overflow:hidden}
       }
       .cont{padding:12px 20px 0 0px}
       p.date{font-size:15px;padding:12px 0 6px 0;letter-spacing:-.4px;font-weight:300}
@@ -320,8 +341,10 @@
   
   .company_info{display:flex;flex-wrap:wrap;padding-bottom:20px;
     @include mobile{flex-direction:column}
+    @include tablet{flex-direction:column}
     dl{width:34%;margin-bottom:20px;
     @include mobile{width:100%}
+    @include tablet{width:100%}
     }
     dt{@include font-face1;font-weight:800;font-size:14px;letter-spacing:0;
     @include mobile{font-size:12px}

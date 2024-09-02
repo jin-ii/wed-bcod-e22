@@ -1,9 +1,11 @@
 /**** common ****/
 .sec1{position:relative;max-width:1920px;width:1410px;height:100%;margin:0 auto;
   @include mobile{width:100%}
+  @include tablet{width:100%}
 }
 .sec2{position:relative;max-width:1920px;height:100%;padding:0 100px;margin:0 auto;
   @include mobile{width:100%;padding:0 30px}
+  @include tablet{width:100%;padding:0 30px}
 }
 
 .h3_title{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:20px;letter-spacing:-2px;
