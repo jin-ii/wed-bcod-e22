@@ -323,7 +323,16 @@
     strong{color:#555}
     .home_location{padding-right:12px}
     .btn_share{display:inline-block;background:url(../images/common/icon_share.png) center center no-repeat;width:24px;height:24px}
+    .share_box{@include position($r:0,$t:30px);background:#7e7e92;min-width:120px;height:auto;padding:12px 0;z-index:9;
+      ul li {
+        a{display:block;color:#e4e4e4;font-weight:400;font-size:14px;padding:0 20px;
+          &:hover{background:#63627b;color:#fff;text-decoration:none}
+        }
+      }
+    }
   }
+
+
   //comoin_title
   .common_sub_top{text-align:center;padding:35px 0;
     p{color:#999;}

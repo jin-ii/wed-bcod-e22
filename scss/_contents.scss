@@ -38,16 +38,28 @@
 
 
 /**** About us ****/
+.intro_sec1{
+  .title_type1{padding:50px 30px}
+}
 .intro_image1{background:url(../images/sub/intro_img1.jpg) no-repeat;height:650px;background-size:cover;background-attachment:fixed;@include flex-center;
     .text{color:#fff;font-size:48px;letter-spacing:20px;@include font-face1;font-weight:400;   
+      @include mobile{text-align:center;line-height:55px}
+      span{
+        @include mobile{display:block}
+      }
     }
   }
 
   // sec2
-  .intro_sec2{width:1478px;margin:0 auto}
+  .intro_sec2{width:1478px;margin:0 auto;
+    @include mobile{width:auto}
+  }
   .wedb_do_wrap{padding:100px 0;
     ul{display:flex;justify-content:center;
-      li{text-align:center}
+      @include mobile{flex-direction:column}
+      li{text-align:center;
+      @include mobile{margin-bottom:40px}
+      }
       h3{font-size:30px;line-height:40px;font-weight:400;padding:15px 0;
         strong{display:block}      
       }
@@ -59,9 +71,13 @@
   .do_wrap{width:100%;height:1000px;background:url(../images/sub/intro_img4.jpg) no-repeat;background-size:cover;padding:140px 0;
     & > div{height:auto !important}
     ul{display:flex;padding:40px 0;justify-content:center;gap:35px;
+      @include mobile{gap:0}
       li{
         p.do{color:#fff;font-size:18px;line-height:28px;padding-top:8px}
       }
+    }
+    .swiper-container{
+      @include mobile{padding:0 30px}
     }
   }
   .tag_do{color:#fff;font-size:17px;margin-top:20px;max-width:700px;
@@ -79,14 +95,25 @@
   
   // sec4
   .who_wrap{width:100%;max-width:1920px;margin:0 auto;position:relative;padding:0 0 140px 0;
+    @include mobile{padding:0 30px 140px 30px;}
     ul{display:flex;justify-content:center;gap:35px;
+      @include mobile{flex-direction:column;gap:0;padding-bottom:40px}
       li{
-        p.do{color:#fff;font-size:18px;line-height:28px;padding-top:8px}
+       
+        p.do{color:#222;font-size:18px;line-height:28px;padding-top:8px;
+        @include mobile{padding-bottom:20px}
+        }
       }
     }
     a.btn_more{@include position($t:280px,$r:80px);@include flex-center;flex-direction:column;border-radius:50%;width:150px;height:150px;
-      background:rgba(0,0,0,0.9);color:#fff;
-      &:hover{text-decoration:none;background:rgba(255,255,255,0.9);color:#222;font-weight:900}
+     background:rgba(0,0,0,0.9);color:#fff;
+     @include mobile{flex-direction:row;position:static;border-radius:0;width:100%;height:55px;background-color:#fff;color:#222;border:1px solid #222}
+      &:hover{text-decoration:none;background:rgba(255,255,255,0.9);color:#222;font-weight:900;
+      @include mobile{background:#222;font-weight:500;color:#fff}
+      }
+      p br{
+        @include mobile{display:none}
+      }
     }
   
   }
