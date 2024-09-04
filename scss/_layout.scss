@@ -351,9 +351,11 @@
   .company_info{display:flex;flex-wrap:wrap;padding-bottom:20px;
     @include mobile{flex-direction:column}
     @include tablet{flex-direction:column}
+    @include tablet2{flex-direction:row}
     dl{width:34%;margin-bottom:20px;
     @include mobile{width:100%}
     @include tablet{width:100%}
+    @include tablet2{width:40%}
     }
     dt{@include font-face1;font-weight:800;font-size:14px;letter-spacing:0;
     @include mobile{font-size:12px}

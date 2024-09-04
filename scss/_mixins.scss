@@ -133,7 +133,7 @@ transition: transform .3s ease,top .3s ease, left .3s ease;
   }
   
   @mixin tablet2 {
-    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @media (min-width: #{$breakpoint-tablet2}) and (max-width: #{$breakpoint-desktop - 1px}) {
       @content;
     }
   }
