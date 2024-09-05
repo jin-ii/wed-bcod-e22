@@ -157,8 +157,19 @@
       @include mobile{font-size:18px;line-height:30px}
     }
   }
-
-
+// scroll_down
+  .scroll_down{position:absolute;bottom:39px;left:50%;z-index:99;transform:translate(-50%);text-align:center;font-size:17px;color:rgba(255,255,255,0.8);font-weight:300;cursor:pointer;}
+  .scroll_down span{display:block;margin:0 auto;width:24px;height:40px;border-radius:20px;border:1px solid #fff;margin-top:10px;box-sizing:border-box;position:relative;}
+  .scroll_down span:before{transition:all 0.3s;animation:scroll_down 1s ease-in Infinite alternate;content:'';position:absolute;top:7px;left:50%;width:6px;height:6px;border-radius:3px;background:#fff;margin-left:-3px;}
+  
+  @keyframes scroll_down {
+    0% {
+    top:7px;
+    }
+    100% {
+    top:calc(100% - 10px);
+    }
+  }
 
 /**** main_section3 ****/
 .wedb_intro{position:relative;width:100%;height:800px;overflow:hidden;background:url(../images/layout/main_intro_img1.jpg) center center no-repeat;
