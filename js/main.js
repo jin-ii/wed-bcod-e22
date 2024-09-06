@@ -146,16 +146,16 @@ new Swiper('.third', {
         },
     breakpoints: {
        
-        640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+        691: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 0,
         },
-        1024: {
-            slidesPerView: 5,
+        1400: {
+            slidesPerView: 3,
             spaceBetween: 50,
         },
         }

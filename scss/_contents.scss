@@ -31,8 +31,8 @@
 
 //  padding
 .pd1{padding:80px 0 75px 0;}
-.pd2{padding-top:130px;padding-bottom:75px}
-.pd3{padding-top:130px}
+.pd2{padding-top:150px;padding-bottom:75px}
+.pd3{padding-top:150px}
 
 .pb40{padding-bottom:40px}
 
@@ -254,43 +254,39 @@
   }
 }
 .visual_products{width:100%;height:880px;background:url($imgurl3 + "product_bg.jpg") no-repeat;background-size:cover;position:relative;top:0px;z-index:1;
-  @include mobile{height:740px}
-}
+  @include mobile{height:740px}}
 
   .prod_sec1{
     @include mobile{padding:0 30px}
    }
-  .prod_sec1 .img_type1{@include flex-center;
-
-  }
-  .prod_sec2 {display:flex;padding:120px 150px;
+  .prod_sec1 .img_type1{@include flex-center}
+  .prod_sec2{display:flex;padding:120px 0px;
     @include mobile{flex-direction:column;padding:100px 30px}
     @include tablet{flex-direction:column;padding:100px 30px}
-    @include tablet2{flex-direction:row}
     .title_type1{padding:60px 0 0 70px;
     @include mobile{padding:60px 0px}
     @include tablet{padding:60px 0px}
-    @include tablet2{padding:60px 55px}
     }
     .p_type1{width:70%;
     @include mobile{width:100%}
-    @include tablet2{width:100%}
     }
   }
   .prod_bgtitle{
     @include mobile{padding:0 30px}
     @include tablet{padding:0 30px}
   }
+
+ 
+
   // 고품질 서비스
   .prod_sec3{position:relative;width:100%;height:1100px;background:url($imgurl3 + "product_img3.jpg") no-repeat;background-size:cover;
     @include mobile{height:1000px}
     h3{color:#fff;text-align:center;font-size:45px;line-height:60px;padding-bottom:30px;margin-top:-230px;
     @include mobile{font-size:32px;line-height:45px;margin-top:0}
-    @include tablet{margin-top:-150px}
     }
     .prod_img{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%)}
     .prod_special{@include flex-center;flex-direction:column;gap:35px;
-      ul{display:flex;
+      ul{display:flex;margin-top:40px;
         @include mobile{flex-direction:column;padding:0 30px}
         @include tablet{flex-direction:column;padding:0 30px}
         li{color:#fff;width:calc(100% / 3);
@@ -298,7 +294,6 @@
         @include tablet{width:100%;margin-bottom:40px}
         h4{display:flex;font-size:24px;line-height:40px;padding-bottom:12px;font-weight:500;
           @include mobile{font-size:22px;line-height:32px}
-          @include tablet{justify-content:center;}
           span.icon{display:block;width:42px;height:42px;background-size:35px;margin-right:8px;
           @include mobile{display:none}
           }
@@ -306,9 +301,7 @@
           .service2{background:url($imgurl3 + "icon_service2.png") center no-repeat}
           .service3{background:url($imgurl3 + "icon_service3.png") center no-repeat}
         }
-        p{font-size:18px;line-height:30px;
-        @include tablet{text-align:center}
-        }
+        p{font-size:18px;line-height:30px}
         }
       }
     }
@@ -319,25 +312,30 @@
     padding:0 30px;
     .prod_special{display:flex;flex-wrap:wrap;
       @include mobile{gap:10px}
-      @include tablet2{flex-wrap:nowrap}
-      li{width:calc(100% / 3);
+      li{width:calc(100% / 3);margin-bottom:40px;
         @include mobile{flex:1 1 calc(50% - 10px);margin-bottom:40px}
-        h5{font-size:18px;line-height:28px;padding:12px 0 4px 0;width:180px;text-align:center}
-        p{line-height:20px;width:180px;text-align:center}
+       
+        h5{font-size:20px;line-height:32px;padding:12px 0 6px 0;width:180px;text-align:center}
+        p{font-size:16px;line-height:24px;width:180px;text-align:center}
       }
     }
     .prod_sensor{display:flex;
       @include mobile{flex-wrap:wrap;gap:10px}
       li{flex:1;text-align:center;
         @include mobile{flex:1 1 calc(50% - 10px)}
-        h5{font-size:18px;line-height:28px;padding:12px 0 4px 0}
-        p{line-height:20px}
+        h5{font-size:20px;line-height:28px;padding:12px 0 6px 0}
+        p{font-size:16px;line-height:26px}
       }
     }   
   }
   .site_wrap{margin:25px 0 0 -150px;
-    ul{display:flex;gap:35px}
-
+    ul{display:flex;gap:35px;
+    @include mobile{gap:0}
+    @include tablet{gap:0}
+    }
+  
+    li p.do{font-size:18px}
+    li p.img img{width:100%}
   }
 
   // 일반 게시판
@@ -351,7 +349,6 @@
      }
      td{height:55px;min-height:55px;line-height:53px;border-bottom:1px solid #d9d9d9;letter-spacing:-1px;padding:4px 20px;font-size:17px;
       color:#222;font-weight:300;
-      @include tablet{padding:4px}
       a{color:#222;font-size:17px;
       &:hover{font-weight:400;text-decoration:none}
       }
