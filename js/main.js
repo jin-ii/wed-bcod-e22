@@ -51,6 +51,7 @@ new Swiper('.first', {
     speed: 1300,
     slidesPerView: 1,
     spaceBetween: 10, 
+    
     fadeEffect: {
         crossFade: false
     },    
@@ -63,7 +64,7 @@ new Swiper('.first', {
         prevEl: '.common_arrows .prev',
     },
    
-
+    
     on: {
         transitionStart: function () {
             TweenMax.staggerFromTo($("#main_slider .swiper-wrapper .slider_img"), 5, { scale: '1.1' }, { scale: '1', ease: Power3.easeOut });
@@ -85,8 +86,18 @@ new Swiper('.first', {
         }
     }
 
-  
+});
 
+$("#swiper-play-pause").click(function(){
+    if($(this).hasClass('play') !== false){
+        $(this).removeClass('play');
+        swiper.autoplay.start();
+    }
+    else{
+        $(this).addClass('play');
+        swiper.autoplay.stop();
+    }
+    return false;
 });
 
 
@@ -134,6 +145,7 @@ new Swiper('.third', {
     autoplay: {
         delay: 5000,
     },
+    
     loop: true,
     navigation: {
         nextEl: '.common_arrows .next',
