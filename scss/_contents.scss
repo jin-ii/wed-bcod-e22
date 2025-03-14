@@ -1,5 +1,5 @@
 /**** common ****/
-.sec1{position:relative;max-width:1920px;width:1410px;height:100%;margin:0 auto;
+.sec1{position:relative;max-width:1920px;width:1500px;height:100%;margin:0 auto;
   @include mobile{width:100%}
   @include tablet{width:100%}
 }
@@ -8,19 +8,19 @@
   @include tablet{width:100%;padding:0 30px}
 }
 
-.h3_title{color:#0e0e18;font-size:45px;line-height:63px;padding-bottom:20px;letter-spacing:-2px;
+.h3_title{color:#0e0e18;font-size:50px;line-height:75px;padding-bottom:20px;letter-spacing:-2px;
   @include mobile{font-size:32px;line-height:45px}
 }
-.h3_title2{font-size:54px;line-height:68px;padding-bottom:70px;letter-spacing:-2px} //eng title
+.h3_title2{font-size:60px;line-height:75px;padding-bottom:70px;letter-spacing:-2px} //eng title
 
 
 .h4_title2{font-size:38px;line-height:56px;padding-bottom:15px;
   @include mobile{font-size:32px;line-height:45px}
 }
-.h4_title{font-size:24px;line-height:40px;padding-bottom:5px;font-weight:800}
+.h4_title{font-size:30px;line-height:45px;padding-bottom:12px;font-weight:800}
 .h5_title{font-size:16px;line-height:35px;padding-bottom:5px;font-weight:800;color:#3252A5}
 
-.p_title{font-size:22px;line-height:35px;font-weight:300;
+.p_title{font-size:24px;line-height:42px;font-weight:300;
   @include mobile{font-size:18px;line-height:30px}
 }
 
@@ -41,7 +41,7 @@
 
 /**** About us ****/
 .intro_sec1{
-  .title_type1{padding:50px 30px}
+  .title_type1{padding:70px 0px}
 }
 .intro_image1{background:url(../images/sub/intro_img1.jpg) no-repeat;height:650px;background-size:cover;background-attachment:fixed;@include flex-center;
     .text{color:#fff;font-size:48px;letter-spacing:20px;@include font-face1;font-weight:400;   
@@ -65,10 +65,10 @@
       @include mobile{margin-bottom:40px}
       @include tablet{margin-bottom:40px}
       }
-      h3{font-size:30px;line-height:40px;font-weight:400;padding:15px 0;
+      h3{font-size:34px;line-height:48px;font-weight:400;padding:35px 0 15px 0;
         strong{display:block}      
       }
-      p{font-size:18px;line-height:30px;width:50%;font-weight:300;margin:0 auto}
+      p{font-size:20px;line-height:35px;width:50%;font-weight:300;margin:0 auto}
     }
   }
   
@@ -85,11 +85,11 @@
       @include mobile{padding:0 30px}
     }
   }
-  .tag_do{color:#fff;font-size:17px;margin-top:20px;max-width:700px;
-    span{display:inline-block;border:1px solid rgba(255,255,255,0.4);color:rgba(255,255,255,0.7);border-radius:30px;padding:0 20px;line-height:45px;margin:0 4px 10px 0}
+  .tag_do{color:#fff;font-size:18px;margin-top:20px;max-width:700px;
+    span{display:inline-block;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.6);border-radius:30px;padding:0 28px;line-height:45px;margin:0 4px 10px 0}
   }
-  .tag_how{color:#222;font-size:17px;margin-top:20px;max-width:700px;
-    span{display:inline-block;border:1px solid rgba(0,0,0,0.2);color:rgba(0,0,0,0.7);border-radius:30px;padding:0 20px;line-height:45px;margin:0 4px 10px 0}
+  .tag_how{color:#222;font-size:18px;margin-top:20px;max-width:700px;
+    span{display:inline-block;border:1px solid rgba(0,0,0,0.2);color:rgba(0,0,0,0.7);border-radius:30px;padding:0 28px;line-height:45px;margin:0 4px 10px 0}
   }
   
   .partnership{display:flex;flex-wrap:wrap;gap:35px;margin-top:30px;
@@ -284,7 +284,7 @@
     h3{color:#fff;text-align:center;font-size:45px;line-height:60px;padding-bottom:30px;margin-top:-230px;
     @include mobile{font-size:32px;line-height:45px;margin-top:0}
     }
-    .prod_img{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%)}
+    .prod_img{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%)}
     .prod_special{@include flex-center;flex-direction:column;gap:35px;
       ul{display:flex;margin-top:40px;
         @include mobile{flex-direction:column;padding:0 30px}

@@ -135,8 +135,8 @@ function closeMenu() {
 new Swiper('.third', {
     effect: 'slide',
     direction: 'horizontal',
-    speed: 800,
-    slidesPerView :1,
+    speed: 1200,
+    slidesPerView :3,
     spaceBetween : 0,
     centeredSlides : false,  
     fadeEffect: {

@@ -16,7 +16,7 @@
           @include mobile{display:none}
           @include tablet{display:none}
                 li{
-                    a{position:relative;display:block;color:#222;font-size:18px;@include font-face1;margin:0 60px;font-weight:700;letter-spacing:0}                  
+                    a{position:relative;display:block;color:#222;font-size:20px;@include font-face1;margin:0 60px;font-weight:700;letter-spacing:0}                  
                     a::after{@include before;position:absolute;left:0;bottom:-4px;width:0;height:2px;background-color:#222;transition: width 0.4s ease;}   
                     a:hover{text-decoration:none;font-weight:700}
                     a:hover::after{width:100%}
@@ -103,8 +103,8 @@
   @include tablet{height:750px}
   }
 }
-.slider_tit{@include position($t:50%,$l:50%);transform:translate(-50%, -50%);color:#fff;font-size:52px;
-    line-height:74px;font-weight:600;text-align:center;opacity:0; 
+.slider_tit{@include position($t:50%,$l:50%);transform:translate(-50%, -50%);color:#fff;font-size:58px;
+    line-height:82px;font-weight:600;text-align:center;opacity:0; 
   br{
     @include mobile{display:none}
     @include tablet{display:none}
@@ -223,7 +223,7 @@
         }
         p.title{font-size:37px;line-height:50px;font-weight:500;letter-spacing:-2px}
       }
-      .area_text2{position:absolute;right:0;top:4vh;font-size:20px;line-height:32px;text-align:right;transform:translateY(100px);max-width:600px;        
+      .area_text2{position:absolute;right:0;top:4vh;font-size:24px;line-height:38px;text-align:right;transform:translateY(100px);max-width:600px;        
         transition-property: transform, opacity;
         transition-duration: 1.2s;
         transition-timing-function: cubic-bezier(0.41, 0.01, 0.16, 1.01);
@@ -344,7 +344,7 @@
 //container
 #sub_container{position:relative;padding-top:100px;
   //home_location
-  .location_info{@include position($r:50px);font-size:13px;color:#676767;letter-spacing:0;@include font-face1;display:flex;align-items:center;
+  .location_info{@include position($r:50px);font-size:15px;color:#676767;letter-spacing:0;@include font-face1;display:flex;align-items:center;
     strong{color:#555}
     .home_location{padding-right:12px}
     .btn_share{display:inline-block;background:url(../images/common/icon_share.png) center center no-repeat;width:24px;height:24px}
@@ -359,10 +359,10 @@
 
 
   //comoin_title
-  .common_sub_top{text-align:center;padding:35px 0;
-    p{color:#999;}
-    h2{font-size:32px;line-height:45px;position:relative}
-    h2::after{content:'';position:absolute;left:50%;top:45px;width:1px;height:45px;background:#222;transform:rotate(40deg)}
+  .common_sub_top{text-align:center;padding:55px 0;
+    p{color:#222;font-size:20px;padding-bottom:12px}
+    h2{font-size:36px;line-height:46px;position:relative}
+    h2::after{content:'';position:absolute;left:50%;top:50px;width:1px;height:60px;background:#222;transform:rotate(35deg)}
   }
 }
 
@@ -371,7 +371,7 @@
 
 
 /**** footer ****/
-#footer{width:100%;padding:30px 0 60px 0;border-top:1px solid #dedee0;
+#footer{width:100%;padding:30px 0 60px 0;background:#101016;
   
   .company_info{display:flex;flex-wrap:wrap;padding-bottom:20px;
     @include mobile{flex-direction:column}
@@ -382,17 +382,17 @@
     @include tablet{width:100%}
     @include tablet2{width:40%}
     }
-    dt{@include font-face1;font-weight:800;font-size:14px;letter-spacing:0;
+    dt{@include font-face1;font-weight:800;font-size:14px;letter-spacing:0;color:#fff;
     @include mobile{font-size:12px}
     }
     dd{color:#858585;font-size:14px;font-weight:400;letter-spacing:0;line-height:24px;
     @include mobile{font-size:13px}
     }
   }
-  .copyright{@include font-face1;letter-spacing:0;font-size:13px;color:676767;padding-top:10px;}
+  .copyright{@include font-face1;letter-spacing:0;font-size:13px;color:#676767;padding-top:10px;}
   .footer_info{display:flex;gap:20px;
     @include mobile{flex-wrap:wrap}
-    li a{font-size:14px;color:#676767;
+    li a{font-size:15px;color:rgba(255,255,255,0.6);font-weight:400;
       @include mobile{font-size:13px}
     }
   }
